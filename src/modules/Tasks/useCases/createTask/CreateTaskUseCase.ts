@@ -1,7 +1,8 @@
-import { Inject } from "tsyring";
+import { Inject,Injectable } from "tsyring";
 import { IcreateTaskDTO } from "../../dtos/ICreateTaskDTO";
 import { ITaskRepository } from "../../repositories/ITaskRepository";
 
+@Injectable
 export class createTaskUseCase {
   constructor(
     @Inject("TaskReposiitory")
